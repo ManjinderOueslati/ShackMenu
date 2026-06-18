@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Restaurant Menu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #faf7f2;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      color: #ddd;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      gap: 0.75rem;
+      overflow-x: auto;
+      padding: 0.75rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      white-space: nowrap;
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      background: #eee;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      border-bottom: 2px solid #111;
+      padding-bottom: 0.25rem;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .item h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .item p {
+      margin: 0.25rem 0 0;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #111;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .item {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Your Restaurant Name</h1>
+    <p>Fresh food • Great taste • Made daily</p>
+  </header>
+
+  <nav>
+    <a href="#appetizers">Appetizers</a>
+    <a href="#mains">Mains</a>
+    <a href="#drinks">Drinks</a>
+    <a href="#desserts">Desserts</a>
+  </nav>
+
+  <main>
+    <section id="appetizers">
+      <h2>Appetizers</h2>
+
+      <div class="item">
+        <div>
+          <h3>Garlic Bread</h3>
+          <p>Toasted bread with garlic butter and herbs.</p>
+        </div>
+        <div class="price">$6</div>
+      </div>
+
+      <div class="item">
+        <div>
+          <h3>House Salad</h3>
+          <p>Mixed greens, tomatoes, cucumbers, and vinaigrette.</p>
+        </div>
+        <div class="price">$8</div>
+      </div>
+    </section>
+
+    <section id="mains">
+      <h2>Main Courses</h2>
+
+      <div class="item">
+        <div>
+          <h3>Grilled Chicken Plate</h3>
+          <p>Served with rice, vegetables, and house sauce.</p>
+        </div>
+        <div class="price">$16</div>
+      </div>
+
+      <div class="item">
+        <div>
+          <h3>Steak Sandwich</h3>
+          <p>Thin-sliced steak, onions, cheese, and toasted bread.</p>
+        </div>
+        <div class="price">$18</div>
+      </div>
+    </section>
+
+    <section id="drinks">
+      <h2>Drinks</h2>
+
+      <div class="item">
+        <div>
+          <h3>Soda</h3>
+          <p>Coke, Sprite, ginger ale, or iced tea.</p>
+        </div>
+        <div class="price">$3</div>
+      </div>
+
+      <div class="item">
+        <div>
+          <h3>Coffee</h3>
+          <p>Freshly brewed hot coffee.</p>
+        </div>
+        <div class="price">$4</div>
+      </div>
+    </section>
+
+    <section id="desserts">
+      <h2>Desserts</h2>
+
+      <div class="item">
+        <div>
+          <h3>Chocolate Cake</h3>
+          <p>Rich chocolate cake with frosting.</p>
+        </div>
+        <div class="price">$7</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Open Daily • 11 AM – 10 PM</p>
+    <p>123 Main Street • Your City</p>
+  </footer>
+</body>
+</html>
