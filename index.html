@@ -49,10 +49,6 @@
       flex-shrink: 0;
     }
 
-    .item-content {
-      flex: 1;
-    }
-
     nav {
       position: sticky;
       top: 0;
@@ -105,6 +101,10 @@
     .item p {
       margin: 0.25rem 0 0;
       color: #555;
+    }
+
+    .item-content {
+      flex: 1;
     }
 
     .price {
@@ -162,11 +162,12 @@
     <h1>The Shack</h1>
     <p>Great Tasting Comfort Food • 520-265-2026 • Family Owned Restaurant</p>
   </header>
+  <!--
   <img
     src="SmokeShack.png"
     alt="The Shack Restaurant"
     class="hero-image">
-
+  -->
   <nav>
     <a href="#Appetizers">Appetizers</a>
     <a href="#Hot_Sandwiches">Hot Sandwiches</a>
@@ -232,18 +233,21 @@
         <div class="price">$12</div>
       </div>
       -->
-      <div class="item-content">
-        <div>
+      <div class="item">
+        <div class="item-content">
           <h3>Chicken Wings (6 Pcs)</h3>
           <p>Up to 36 Pcs per order</p>
           <p>Sauce choices: BBQ, Sweet Chili, Garlic Parm, Lemon Pepper or Buffalo</p>
         </div>
-        <div class="price">$12</div>
-        <img
+
+        <img 
           src="Wings.jpg"
           alt="Chicken Wings"
           class="menu-image">
+
+        <div class="price">$12</div>
       </div>
+   
     <section>
 
     <section id="Hot_Sandwiches">
@@ -251,16 +255,19 @@
       <p>Extra toppings ($0.50 - $1.00): Peppers, Onions, Fried Onions, Jalapenos, Sweet Peppers, Banana Peppers, Green Chile, Pickles
       <p>All hoagies are served with Lettuce, Onions, and Tomatoes
       <p>Cheese options are American Cheese, Provolone Cheese, or Cheese Whiz
-      <div class="item-content">
-        <div>
+
+      <div class="item">
+        <div class="item-content">
           <h3>6&Prime;/12&Prime; Cheesesteak</h3>
           <p>Thinly-sliced steak served with cheese on a hoagie roll</p>
         </div>
-        <div class="price">$8/$12</div>
+
         <img
           src="Cheesesteak.jpg"
           alt="Cheesesteak"
           class="menu-image">
+
+        <div class="price">$8/$12</div>
       </div>
 
       <div class="item">
@@ -370,16 +377,17 @@
         <div class="price">$10</div>
       </div>
 
-
-      <div class="item-content">
-        <div>
+      <div class="item">
+        <div class="item-content">
           <h3>6&Prime;/12&Prime; Cheesesteak with Fries and Soda</h3>
         </div>
-        <div class="price">$10</div>
+
         <img
           src="Combo.jpg"
           alt="Cheesesteak Combo"
           class="menu-image">
+
+        <div class="price">$10</div>
       </div>
 
       <div class="item">
