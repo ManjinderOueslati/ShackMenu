@@ -35,6 +35,24 @@
       color: #ddd;
     }
 
+    .hero-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .menu-image {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    .item-content {
+      flex: 1;
+    }
+
     nav {
       position: sticky;
       top: 0;
@@ -73,7 +91,7 @@
 
     .item {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
       gap: 1rem;
       padding: 1rem 0;
       border-bottom: 1px solid #ddd;
@@ -119,6 +137,10 @@
     <h1>The Shack</h1>
     <p>Great Tasting Comfort Food • 520-265-2026 • Family Owned Restaurant</p>
   </header>
+  <img
+    src="assets/images/SmokeShack.png"
+    alt="The Shack Restaurant"
+    class="hero-image">
 
   <nav>
     <a href="#Appetizers">Appetizers</a>
@@ -175,7 +197,7 @@
         </div>
         <div class="price">$7/$8</div>
       </div>
-
+      <!--
       <div class="item">
         <div>
           <h3>Chicken Wings (6 Pcs)</h3>
@@ -184,6 +206,20 @@
         </div>
         <div class="price">$12</div>
       </div>
+      -->
+    <div class="item">
+      <img
+        src="assets/images/Wings.jpg"
+        alt="Chicken Wings"
+        class="menu-image">
+
+      <div class="item-content">
+        <h3>Chicken Wings (6 Pcs)</h3>
+        <p>Up to 36 Pcs per order</p>
+        <p>Sauce choices: BBQ, Sweet Chili, Garlic Parm, Lemon Pepper or Buffalo</p>
+      </div>
+      <div class="price">$12</div>
+    </div>
     <section>
 
     <section id="Hot_Sandwiches">
